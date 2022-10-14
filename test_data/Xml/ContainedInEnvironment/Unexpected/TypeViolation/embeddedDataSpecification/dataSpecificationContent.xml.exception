@@ -1,0 +1,1 @@
+environment/assetAdministrationShells/*[0]/embeddedDataSpecifications/*[0]/dataSpecificationContent: Expected a discriminator start element corresponding to DataSpecificationContent, but got event 'end' and element '{https://admin-shell.io/aas/3/0/RC02}dataSpecificationContent'

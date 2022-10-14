@@ -1,0 +1,1 @@
+environment/assetAdministrationShells/*[0]/embeddedDataSpecifications/*[0]/dataSpecificationContent/dataSpecificationPhysicalUnit/registrationAuthorityId: Expected the end element for '{https://admin-shell.io/aas/3/0/RC02}registrationAuthorityId', but got the event 'start' and element '{https://admin-shell.io/aas/3/0/RC02}type'
