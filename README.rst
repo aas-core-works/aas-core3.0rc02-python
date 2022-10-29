@@ -1,6 +1,6 @@
-****************
-aas-core-codegen
-****************
+**********************
+aas-core3.0rc02-python
+**********************
 
 .. image:: https://github.com/aas-core-works/aas-core3.0rc02-python/actions/workflows/ci.yml/badge.svg
     :target: https://github.com/aas-core-works/aas-core3.0rc02-python/actions/workflows/ci.yml
