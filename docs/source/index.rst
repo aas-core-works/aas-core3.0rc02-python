@@ -15,6 +15,7 @@ Table of Contents
    :maxdepth: 1
 
    api/index
+   contributing
    changelog
 
 Indices and tables
