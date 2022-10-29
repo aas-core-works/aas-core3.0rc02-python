@@ -1,0 +1,1 @@
+environment/submodels/*[0]/semanticId/referredSemanticId: Expected only XML elements representing the properties and whitespace text, but got text: 'Unexpected string value'
