@@ -8,6 +8,8 @@
       <excludeFolder url="file://$MODULE_DIR$/docs/build" />
       <excludeFolder url="file://$MODULE_DIR$/venv37" />
       <excludeFolder url="file://$MODULE_DIR$/venv36" />
+      <excludeFolder url="file://$MODULE_DIR$/venv-docs" />
+      <excludeFolder url="file://$MODULE_DIR$/dist" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (aas-core3.0rc02-python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
