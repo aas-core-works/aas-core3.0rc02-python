@@ -54,7 +54,8 @@ Run in your virtual environment:
 
 .. code-block::
 
-    pip3 install --editable .[dev]
+    pip3 install --editable .
+    pip3 install -r requirements-dev.txt
 
 Now you can execute the checks (from the repository root):
 

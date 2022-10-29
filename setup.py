@@ -39,20 +39,6 @@ setup(
     keywords="asset administration shell sdk industry 4.0 industrie i4.0 industry iot iiot",
     packages=find_packages(exclude=["tests", "continuous_integration", "dev_scripts"]),
     install_requires=[] if sys.version_info >= (3, 8) else ["typing_extensions"],
-    # fmt: off
-    extras_require={
-        "dev": [
-            "black==22.10.0",
-            "mypy==0.982",
-            "pylint==2.15.4",
-            "coverage>=6.5.0,<7",
-            "pyinstaller>=5<6",
-            "twine",
-            "aas-core-meta@git+https://github.com/aas-core-works/aas-core-meta@e63c0c9#egg=aas-core-meta",
-            "aas-core-codegen@git+https://github.com/aas-core-works/aas-core-codegen@4a4695c#egg=aas-core-codegen",
-        ]
-    },
-    # fmt: on
     py_modules=["aas_core3_rc02"],
     package_data={"aas_core3_rc02": ["py.typed"]},
     data_files=[(".", ["LICENSE", "README.rst"])],
