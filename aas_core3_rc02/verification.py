@@ -583,7 +583,7 @@ def matches_xs_decimal(text: str) -> bool:
 # noinspection SpellCheckingInspection
 def _construct_matches_xs_double() -> Pattern[str]:
     double_rep = (
-        "((\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN)"
+        "((\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|-?INF|NaN)"
     )
     pattern = f"^{double_rep}$"
 
@@ -633,7 +633,7 @@ def matches_xs_duration(text: str) -> bool:
 # noinspection SpellCheckingInspection
 def _construct_matches_xs_float() -> Pattern[str]:
     float_rep = (
-        "((\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN)"
+        "((\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|-?INF|NaN)"
     )
     pattern = f"^{float_rep}$"
 
