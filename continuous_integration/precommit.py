@@ -113,14 +113,16 @@ def main() -> int:
 
         if overwrite:
             exit_code = call_and_report(
-                verb="black", cmd=["black"] + reformat_targets, cwd=repo_root
+                verb="black",
+                cmd=[sys.executable, "-m", "black"] + reformat_targets,
+                cwd=repo_root,
             )
             if exit_code != 0:
                 return 1
         else:
             exit_code = call_and_report(
                 verb="check with black",
-                cmd=["black", "--check"] + reformat_targets,
+                cmd=[sys.executable, "-m", "black", "--check"] + reformat_targets,
                 cwd=repo_root,
             )
             if exit_code != 0:
@@ -140,7 +142,15 @@ def main() -> int:
 
         exit_code = call_and_report(
             verb="mypy",
-            cmd=["mypy", "--strict", "--config-file", str(config_file)] + mypy_targets,
+            cmd=[
+                sys.executable,
+                "-m",
+                "mypy",
+                "--strict",
+                "--config-file",
+                str(config_file),
+            ]
+            + mypy_targets,
             cwd=repo_root,
         )
         if exit_code != 0:
@@ -160,7 +170,7 @@ def main() -> int:
 
         exit_code = call_and_report(
             verb="pylint",
-            cmd=["pylint", f"--rcfile={rcfile}"] + pylint_targets,
+            cmd=[sys.executable, "-m", "pylint", f"--rcfile={rcfile}"] + pylint_targets,
             cwd=repo_root,
         )
         if exit_code != 0:
@@ -176,6 +186,8 @@ def main() -> int:
         exit_code = call_and_report(
             verb="execute unit tests",
             cmd=[
+                sys.executable,
+                "-m",
                 "coverage",
                 "run",
                 "--source",
@@ -191,7 +203,9 @@ def main() -> int:
             return 1
 
         exit_code = call_and_report(
-            verb="report the coverage", cmd=["coverage", "report"], cwd=repo_root
+            verb="report the coverage",
+            cmd=[sys.executable, "-m", "coverage", "report"],
+            cwd=repo_root,
         )
         if exit_code != 0:
             return 1
