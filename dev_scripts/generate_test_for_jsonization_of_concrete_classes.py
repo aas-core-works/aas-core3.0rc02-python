@@ -55,7 +55,7 @@ def test_ok(self) -> None:
 {IIII}/ "SelfContained"
 {IIII}/ "Expected"
 {IIII}/ {cls_name_json_literal}
-{II}).glob("*.json")
+{II}).glob("**/*.json")
 {I})
 
 {I}for path in paths:
@@ -121,7 +121,7 @@ def test_deserialization_failures(self) -> None:
 {III}# and this ``cause``.
 {III}continue
 
-{II}for path in sorted(base_dir.glob("*.json")):
+{II}for path in sorted(base_dir.glob("**/*.json")):
 {III}with path.open("rt") as fid:
 {IIII}jsonable = json.load(fid)
 
@@ -162,7 +162,7 @@ def test_verification_failures(self) -> None:
 {III}# and this ``cause``.
 {III}continue
 
-{II}for path in sorted(base_dir.glob("*.json")):
+{II}for path in sorted(base_dir.glob("**/*.json")):
 {III}with path.open("rt") as fid:
 {IIII}jsonable = json.load(fid)
 
@@ -243,7 +243,7 @@ def test_ok(self) -> None:
 {IIII}/ "ContainedInEnvironment"
 {IIII}/ "Expected"
 {IIII}/ {cls_name_json_literal}
-{II}).glob("*.json")
+{II}).glob("**/*.json")
 {I})
 
 {I}for path in paths:
@@ -309,7 +309,7 @@ def test_deserialization_failures(self) -> None:
 {III}# and this ``cause``.
 {III}continue
 
-{II}for path in sorted(base_dir.glob("*.json")):
+{II}for path in sorted(base_dir.glob("**/*.json")):
 {III}with path.open("rt") as fid:
 {IIII}jsonable = json.load(fid)
 
@@ -350,7 +350,7 @@ def test_verification_failures(self) -> None:
 {III}# and this ``cause``.
 {III}continue
 
-{II}for path in sorted(base_dir.glob("*.json")):
+{II}for path in sorted(base_dir.glob("**/*.json")):
 {III}with path.open("rt") as fid:
 {IIII}jsonable = json.load(fid)
 

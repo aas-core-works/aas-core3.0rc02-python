@@ -81,7 +81,7 @@ def test_ok(self) -> None:
 {IIII}/ {container_kind_literal}
 {IIII}/ "Expected"
 {IIII}/ {xml_class_name_literal}
-{II}).glob("*.xml")
+{II}).glob("**/*.xml")
 {I})
 
 {I}for path in paths:
@@ -135,7 +135,7 @@ def test_deserialization_failures(self) -> None:
 {III}# and this ``cause``.
 {III}continue
 
-{II}for path in sorted(base_dir.glob("*.xml")):
+{II}for path in sorted(base_dir.glob("**/*.xml")):
 {III}observed_exception: Optional[
 {IIII}aas_xmlization.DeserializationException
 {III}] = None
@@ -175,7 +175,7 @@ def test_verification_failures(self) -> None:
 {III}# and this ``cause``.
 {III}continue
 
-{II}for path in sorted(base_dir.glob("*.xml")):
+{II}for path in sorted(base_dir.glob("**/*.xml")):
 {III}try:
 {IIII}{target_variable} = aas_xmlization.{from_str}(
 {IIIII}path.read_text(encoding='utf-8')
@@ -212,7 +212,7 @@ def test_different_input_forms_give_equal_outcomes(self) -> None:
 {IIII}/ {container_kind_literal}
 {IIII}/ "Expected"
 {IIII}/ {xml_class_name_literal}
-{II}).glob("*.xml")
+{II}).glob("**/*.xml")
 {I})
 
 {I}for path in paths:

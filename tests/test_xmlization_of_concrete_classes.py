@@ -43,7 +43,7 @@ class Test_Extension(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "extension"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -91,7 +91,7 @@ class Test_Extension(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -129,7 +129,7 @@ class Test_Extension(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -161,7 +161,7 @@ class Test_Extension(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "extension"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -217,7 +217,7 @@ class Test_AdministrativeInformation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "administrativeInformation"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -265,7 +265,7 @@ class Test_AdministrativeInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -303,7 +303,7 @@ class Test_AdministrativeInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -335,7 +335,7 @@ class Test_AdministrativeInformation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "administrativeInformation"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -391,7 +391,7 @@ class Test_Qualifier(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "qualifier"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -439,7 +439,7 @@ class Test_Qualifier(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -477,7 +477,7 @@ class Test_Qualifier(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -509,7 +509,7 @@ class Test_Qualifier(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "qualifier"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -565,7 +565,7 @@ class Test_AssetAdministrationShell(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "assetAdministrationShell"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -613,7 +613,7 @@ class Test_AssetAdministrationShell(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -651,7 +651,7 @@ class Test_AssetAdministrationShell(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -683,7 +683,7 @@ class Test_AssetAdministrationShell(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "assetAdministrationShell"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -739,7 +739,7 @@ class Test_AssetInformation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "assetInformation"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -787,7 +787,7 @@ class Test_AssetInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -825,7 +825,7 @@ class Test_AssetInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -857,7 +857,7 @@ class Test_AssetInformation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "assetInformation"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -913,7 +913,7 @@ class Test_Resource(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "resource"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -961,7 +961,7 @@ class Test_Resource(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -999,7 +999,7 @@ class Test_Resource(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -1031,7 +1031,7 @@ class Test_Resource(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "resource"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1087,7 +1087,7 @@ class Test_SpecificAssetId(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "specificAssetId"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1135,7 +1135,7 @@ class Test_SpecificAssetId(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -1173,7 +1173,7 @@ class Test_SpecificAssetId(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -1205,7 +1205,7 @@ class Test_SpecificAssetId(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "specificAssetId"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1261,7 +1261,7 @@ class Test_Submodel(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "submodel"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1309,7 +1309,7 @@ class Test_Submodel(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -1347,7 +1347,7 @@ class Test_Submodel(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -1379,7 +1379,7 @@ class Test_Submodel(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "submodel"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1435,7 +1435,7 @@ class Test_RelationshipElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "relationshipElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1483,7 +1483,7 @@ class Test_RelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -1521,7 +1521,7 @@ class Test_RelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -1553,7 +1553,7 @@ class Test_RelationshipElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "relationshipElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1609,7 +1609,7 @@ class Test_SubmodelElementList(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "submodelElementList"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1657,7 +1657,7 @@ class Test_SubmodelElementList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -1695,7 +1695,7 @@ class Test_SubmodelElementList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -1727,7 +1727,7 @@ class Test_SubmodelElementList(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "submodelElementList"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1783,7 +1783,7 @@ class Test_SubmodelElementCollection(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "submodelElementCollection"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1831,7 +1831,7 @@ class Test_SubmodelElementCollection(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -1869,7 +1869,7 @@ class Test_SubmodelElementCollection(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -1901,7 +1901,7 @@ class Test_SubmodelElementCollection(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "submodelElementCollection"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -1957,7 +1957,7 @@ class Test_Property(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "property"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2005,7 +2005,7 @@ class Test_Property(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -2043,7 +2043,7 @@ class Test_Property(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -2075,7 +2075,7 @@ class Test_Property(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "property"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2131,7 +2131,7 @@ class Test_MultiLanguageProperty(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "multiLanguageProperty"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2179,7 +2179,7 @@ class Test_MultiLanguageProperty(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -2217,7 +2217,7 @@ class Test_MultiLanguageProperty(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -2249,7 +2249,7 @@ class Test_MultiLanguageProperty(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "multiLanguageProperty"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2305,7 +2305,7 @@ class Test_Range(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "range"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2353,7 +2353,7 @@ class Test_Range(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -2391,7 +2391,7 @@ class Test_Range(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -2423,7 +2423,7 @@ class Test_Range(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "range"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2479,7 +2479,7 @@ class Test_ReferenceElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "referenceElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2527,7 +2527,7 @@ class Test_ReferenceElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -2565,7 +2565,7 @@ class Test_ReferenceElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -2597,7 +2597,7 @@ class Test_ReferenceElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "referenceElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2653,7 +2653,7 @@ class Test_Blob(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "blob"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2701,7 +2701,7 @@ class Test_Blob(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -2739,7 +2739,7 @@ class Test_Blob(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -2771,7 +2771,7 @@ class Test_Blob(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "blob"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2827,7 +2827,7 @@ class Test_File(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "file"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -2875,7 +2875,7 @@ class Test_File(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -2913,7 +2913,7 @@ class Test_File(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -2945,7 +2945,7 @@ class Test_File(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "file"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3001,7 +3001,7 @@ class Test_AnnotatedRelationshipElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "annotatedRelationshipElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3049,7 +3049,7 @@ class Test_AnnotatedRelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -3087,7 +3087,7 @@ class Test_AnnotatedRelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -3119,7 +3119,7 @@ class Test_AnnotatedRelationshipElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "annotatedRelationshipElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3175,7 +3175,7 @@ class Test_Entity(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "entity"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3223,7 +3223,7 @@ class Test_Entity(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -3261,7 +3261,7 @@ class Test_Entity(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -3293,7 +3293,7 @@ class Test_Entity(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "entity"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3349,7 +3349,7 @@ class Test_EventPayload(unittest.TestCase):
                 / "SelfContained"
                 / "Expected"
                 / "eventPayload"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3397,7 +3397,7 @@ class Test_EventPayload(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -3435,7 +3435,7 @@ class Test_EventPayload(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     instance = aas_xmlization.event_payload_from_str(
                         path.read_text(encoding="utf-8")
@@ -3467,7 +3467,7 @@ class Test_EventPayload(unittest.TestCase):
                 / "SelfContained"
                 / "Expected"
                 / "eventPayload"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3525,7 +3525,7 @@ class Test_BasicEventElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "basicEventElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3573,7 +3573,7 @@ class Test_BasicEventElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -3611,7 +3611,7 @@ class Test_BasicEventElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -3643,7 +3643,7 @@ class Test_BasicEventElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "basicEventElement"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3699,7 +3699,7 @@ class Test_Operation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "operation"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3747,7 +3747,7 @@ class Test_Operation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -3785,7 +3785,7 @@ class Test_Operation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -3817,7 +3817,7 @@ class Test_Operation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "operation"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3873,7 +3873,7 @@ class Test_OperationVariable(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "operationVariable"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -3921,7 +3921,7 @@ class Test_OperationVariable(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -3959,7 +3959,7 @@ class Test_OperationVariable(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -3991,7 +3991,7 @@ class Test_OperationVariable(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "operationVariable"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4047,7 +4047,7 @@ class Test_Capability(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "capability"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4095,7 +4095,7 @@ class Test_Capability(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -4133,7 +4133,7 @@ class Test_Capability(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -4165,7 +4165,7 @@ class Test_Capability(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "capability"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4221,7 +4221,7 @@ class Test_ConceptDescription(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "conceptDescription"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4269,7 +4269,7 @@ class Test_ConceptDescription(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -4307,7 +4307,7 @@ class Test_ConceptDescription(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -4339,7 +4339,7 @@ class Test_ConceptDescription(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "conceptDescription"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4395,7 +4395,7 @@ class Test_Reference(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "reference"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4443,7 +4443,7 @@ class Test_Reference(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -4481,7 +4481,7 @@ class Test_Reference(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -4513,7 +4513,7 @@ class Test_Reference(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "reference"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4569,7 +4569,7 @@ class Test_Key(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "key"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4617,7 +4617,7 @@ class Test_Key(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -4655,7 +4655,7 @@ class Test_Key(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -4687,7 +4687,7 @@ class Test_Key(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "key"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4743,7 +4743,7 @@ class Test_LangString(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "langString"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4791,7 +4791,7 @@ class Test_LangString(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -4829,7 +4829,7 @@ class Test_LangString(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -4861,7 +4861,7 @@ class Test_LangString(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "langString"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4917,7 +4917,7 @@ class Test_Environment(unittest.TestCase):
                 / "SelfContained"
                 / "Expected"
                 / "environment"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -4965,7 +4965,7 @@ class Test_Environment(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -5003,7 +5003,7 @@ class Test_Environment(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     instance = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -5035,7 +5035,7 @@ class Test_Environment(unittest.TestCase):
                 / "SelfContained"
                 / "Expected"
                 / "environment"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5091,7 +5091,7 @@ class Test_EmbeddedDataSpecification(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "embeddedDataSpecification"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5139,7 +5139,7 @@ class Test_EmbeddedDataSpecification(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -5177,7 +5177,7 @@ class Test_EmbeddedDataSpecification(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -5209,7 +5209,7 @@ class Test_EmbeddedDataSpecification(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "embeddedDataSpecification"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5265,7 +5265,7 @@ class Test_ValueReferencePair(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "valueReferencePair"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5313,7 +5313,7 @@ class Test_ValueReferencePair(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -5351,7 +5351,7 @@ class Test_ValueReferencePair(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -5383,7 +5383,7 @@ class Test_ValueReferencePair(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "valueReferencePair"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5439,7 +5439,7 @@ class Test_ValueList(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "valueList"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5487,7 +5487,7 @@ class Test_ValueList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -5525,7 +5525,7 @@ class Test_ValueList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -5557,7 +5557,7 @@ class Test_ValueList(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "valueList"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5613,7 +5613,7 @@ class Test_DataSpecificationIEC61360(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "dataSpecificationIec61360"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5661,7 +5661,7 @@ class Test_DataSpecificationIEC61360(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -5699,7 +5699,7 @@ class Test_DataSpecificationIEC61360(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -5731,7 +5731,7 @@ class Test_DataSpecificationIEC61360(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "dataSpecificationIec61360"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5787,7 +5787,7 @@ class Test_DataSpecificationPhysicalUnit(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "dataSpecificationPhysicalUnit"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
@@ -5835,7 +5835,7 @@ class Test_DataSpecificationPhysicalUnit(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 observed_exception: Optional[
                     aas_xmlization.DeserializationException
                 ] = None
@@ -5873,7 +5873,7 @@ class Test_DataSpecificationPhysicalUnit(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.xml")):
+            for path in sorted(base_dir.glob("**/*.xml")):
                 try:
                     container = aas_xmlization.environment_from_str(
                         path.read_text(encoding="utf-8")
@@ -5905,7 +5905,7 @@ class Test_DataSpecificationPhysicalUnit(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "dataSpecificationPhysicalUnit"
-            ).glob("*.xml")
+            ).glob("**/*.xml")
         )
 
         for path in paths:
