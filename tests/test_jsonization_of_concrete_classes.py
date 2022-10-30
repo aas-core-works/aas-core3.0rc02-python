@@ -45,7 +45,7 @@ class Test_Extension(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Extension"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -106,7 +106,7 @@ class Test_Extension(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -145,7 +145,7 @@ class Test_Extension(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -184,7 +184,7 @@ class Test_AdministrativeInformation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "AdministrativeInformation"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -245,7 +245,7 @@ class Test_AdministrativeInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -284,7 +284,7 @@ class Test_AdministrativeInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -323,7 +323,7 @@ class Test_Qualifier(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Qualifier"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -384,7 +384,7 @@ class Test_Qualifier(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -423,7 +423,7 @@ class Test_Qualifier(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -462,7 +462,7 @@ class Test_AssetAdministrationShell(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "AssetAdministrationShell"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -523,7 +523,7 @@ class Test_AssetAdministrationShell(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -562,7 +562,7 @@ class Test_AssetAdministrationShell(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -601,7 +601,7 @@ class Test_AssetInformation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "AssetInformation"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -662,7 +662,7 @@ class Test_AssetInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -701,7 +701,7 @@ class Test_AssetInformation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -740,7 +740,7 @@ class Test_Resource(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Resource"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -801,7 +801,7 @@ class Test_Resource(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -840,7 +840,7 @@ class Test_Resource(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -879,7 +879,7 @@ class Test_SpecificAssetId(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "SpecificAssetId"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -940,7 +940,7 @@ class Test_SpecificAssetId(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -979,7 +979,7 @@ class Test_SpecificAssetId(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1018,7 +1018,7 @@ class Test_Submodel(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Submodel"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -1079,7 +1079,7 @@ class Test_Submodel(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1118,7 +1118,7 @@ class Test_Submodel(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1157,7 +1157,7 @@ class Test_RelationshipElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "RelationshipElement"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -1218,7 +1218,7 @@ class Test_RelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1257,7 +1257,7 @@ class Test_RelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1296,7 +1296,7 @@ class Test_SubmodelElementList(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "SubmodelElementList"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -1357,7 +1357,7 @@ class Test_SubmodelElementList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1396,7 +1396,7 @@ class Test_SubmodelElementList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1435,7 +1435,7 @@ class Test_SubmodelElementCollection(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "SubmodelElementCollection"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -1496,7 +1496,7 @@ class Test_SubmodelElementCollection(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1535,7 +1535,7 @@ class Test_SubmodelElementCollection(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1574,7 +1574,7 @@ class Test_Property(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Property"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -1635,7 +1635,7 @@ class Test_Property(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1674,7 +1674,7 @@ class Test_Property(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1713,7 +1713,7 @@ class Test_MultiLanguageProperty(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "MultiLanguageProperty"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -1774,7 +1774,7 @@ class Test_MultiLanguageProperty(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1813,7 +1813,7 @@ class Test_MultiLanguageProperty(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1852,7 +1852,7 @@ class Test_Range(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Range"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -1913,7 +1913,7 @@ class Test_Range(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1952,7 +1952,7 @@ class Test_Range(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -1991,7 +1991,7 @@ class Test_ReferenceElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "ReferenceElement"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -2052,7 +2052,7 @@ class Test_ReferenceElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2091,7 +2091,7 @@ class Test_ReferenceElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2130,7 +2130,7 @@ class Test_Blob(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Blob"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -2191,7 +2191,7 @@ class Test_Blob(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2230,7 +2230,7 @@ class Test_Blob(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2269,7 +2269,7 @@ class Test_File(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "File"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -2330,7 +2330,7 @@ class Test_File(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2369,7 +2369,7 @@ class Test_File(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2408,7 +2408,7 @@ class Test_AnnotatedRelationshipElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "AnnotatedRelationshipElement"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -2469,7 +2469,7 @@ class Test_AnnotatedRelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2508,7 +2508,7 @@ class Test_AnnotatedRelationshipElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2547,7 +2547,7 @@ class Test_Entity(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Entity"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -2608,7 +2608,7 @@ class Test_Entity(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2647,7 +2647,7 @@ class Test_Entity(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2686,7 +2686,7 @@ class Test_EventPayload(unittest.TestCase):
                 / "SelfContained"
                 / "Expected"
                 / "EventPayload"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -2747,7 +2747,7 @@ class Test_EventPayload(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2786,7 +2786,7 @@ class Test_EventPayload(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2825,7 +2825,7 @@ class Test_BasicEventElement(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "BasicEventElement"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -2886,7 +2886,7 @@ class Test_BasicEventElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2925,7 +2925,7 @@ class Test_BasicEventElement(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -2964,7 +2964,7 @@ class Test_Operation(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Operation"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3025,7 +3025,7 @@ class Test_Operation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3064,7 +3064,7 @@ class Test_Operation(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3103,7 +3103,7 @@ class Test_OperationVariable(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "OperationVariable"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3164,7 +3164,7 @@ class Test_OperationVariable(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3203,7 +3203,7 @@ class Test_OperationVariable(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3242,7 +3242,7 @@ class Test_Capability(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Capability"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3303,7 +3303,7 @@ class Test_Capability(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3342,7 +3342,7 @@ class Test_Capability(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3381,7 +3381,7 @@ class Test_ConceptDescription(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "ConceptDescription"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3442,7 +3442,7 @@ class Test_ConceptDescription(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3481,7 +3481,7 @@ class Test_ConceptDescription(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3520,7 +3520,7 @@ class Test_Reference(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Reference"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3581,7 +3581,7 @@ class Test_Reference(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3620,7 +3620,7 @@ class Test_Reference(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3659,7 +3659,7 @@ class Test_Key(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "Key"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3720,7 +3720,7 @@ class Test_Key(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3759,7 +3759,7 @@ class Test_Key(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3798,7 +3798,7 @@ class Test_LangString(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "LangString"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3859,7 +3859,7 @@ class Test_LangString(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3898,7 +3898,7 @@ class Test_LangString(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -3937,7 +3937,7 @@ class Test_Environment(unittest.TestCase):
                 / "SelfContained"
                 / "Expected"
                 / "Environment"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -3998,7 +3998,7 @@ class Test_Environment(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4037,7 +4037,7 @@ class Test_Environment(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4076,7 +4076,7 @@ class Test_EmbeddedDataSpecification(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "EmbeddedDataSpecification"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -4137,7 +4137,7 @@ class Test_EmbeddedDataSpecification(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4176,7 +4176,7 @@ class Test_EmbeddedDataSpecification(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4215,7 +4215,7 @@ class Test_ValueReferencePair(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "ValueReferencePair"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -4276,7 +4276,7 @@ class Test_ValueReferencePair(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4315,7 +4315,7 @@ class Test_ValueReferencePair(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4354,7 +4354,7 @@ class Test_ValueList(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "ValueList"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -4415,7 +4415,7 @@ class Test_ValueList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4454,7 +4454,7 @@ class Test_ValueList(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4493,7 +4493,7 @@ class Test_DataSpecificationIEC61360(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "DataSpecificationIEC61360"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -4554,7 +4554,7 @@ class Test_DataSpecificationIEC61360(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4593,7 +4593,7 @@ class Test_DataSpecificationIEC61360(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4632,7 +4632,7 @@ class Test_DataSpecificationPhysicalUnit(unittest.TestCase):
                 / "ContainedInEnvironment"
                 / "Expected"
                 / "DataSpecificationPhysicalUnit"
-            ).glob("*.json")
+            ).glob("**/*.json")
         )
 
         for path in paths:
@@ -4693,7 +4693,7 @@ class Test_DataSpecificationPhysicalUnit(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
@@ -4732,7 +4732,7 @@ class Test_DataSpecificationPhysicalUnit(unittest.TestCase):
                 # and this ``cause``.
                 continue
 
-            for path in sorted(base_dir.glob("*.json")):
+            for path in sorted(base_dir.glob("**/*.json")):
                 with path.open("rt") as fid:
                     jsonable = json.load(fid)
 
