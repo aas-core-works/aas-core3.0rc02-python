@@ -16,9 +16,9 @@ Change Log
       This means that overflows are now correctly detected if the value is not a proper ``INF``.
 
     * We disallow floating-point numbers in exponents in ``xs:float`` and ``xs:double``,
-      see also: `aas-core-meta b2d1230`.
+      see also: `aas-core-meta b2d1230`_.
 
-    * We disallow ``+INF`` as plus sign is not allowed in XML, see also `aas-core-meta a8e6621`
+    * We disallow ``+INF`` as plus sign is not allowed in XML, see also `aas-core-meta a8e6621`_
 
 .. _aas-core-meta b2d1230: https://github.com/aas-core-works/aas-core-meta/commit/b2d1230
 .. _aas-core-meta a8e6621: https://github.com/aas-core-works/aas-core-meta/commit/a8e6621
