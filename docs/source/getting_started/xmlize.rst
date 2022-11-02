@@ -26,7 +26,7 @@ Here is an example snippet:
                 submodel_elements=[
                     aas_types.Property(
                         id_short = "some_property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1984"
                     )
                 ]

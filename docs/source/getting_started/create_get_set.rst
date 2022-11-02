@@ -44,7 +44,7 @@ The submodel will contain two elements, a property and a blob.
     # Create the first element
     some_element = aas_types.Property(
         id_short="some_property",
-        value_type=aas_types.DataTypeDefXSD.INT,
+        value_type=aas_types.DataTypeDefXsd.INT,
         value="1984"
     )
 

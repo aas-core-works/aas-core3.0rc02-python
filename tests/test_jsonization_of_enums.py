@@ -41,7 +41,7 @@ class Test_AssetKind(unittest.TestCase):
         self.assertEqual(enum_literal.value, jsonable)
 
 
-class Test_AASSubmodelElements(unittest.TestCase):
+class Test_AasSubmodelElements(unittest.TestCase):
     def test_round_trip(self) -> None:
         jsonable = "AnnotatedRelationshipElement"
 
@@ -95,7 +95,7 @@ class Test_KeyTypes(unittest.TestCase):
         self.assertEqual(enum_literal.value, jsonable)
 
 
-class Test_DataTypeDefXSD(unittest.TestCase):
+class Test_DataTypeDefXsd(unittest.TestCase):
     def test_round_trip(self) -> None:
         jsonable = "xs:anyURI"
 

@@ -25,7 +25,7 @@ Here is a short example snippet:
                         # The ID-shorts must be proper variable names,
                         # but there is a dash ("-") in this ID-short.
                         id_short = "some-Property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1984"
                     )
                 ]

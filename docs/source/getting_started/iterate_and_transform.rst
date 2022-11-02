@@ -41,17 +41,17 @@ Here is a short example how you can get all the properties from an environment w
                 submodel_elements=[
                     aas_types.Property(
                         id_short="some_property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1984"
                     ),
                     aas_types.Property(
                         id_short="another_property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1985"
                     ),
                     aas_types.Property(
                         id_short="yet_another_property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1986"
                     )
                 ]
@@ -121,17 +121,17 @@ Let us re-write the above example related to :py:meth:`~aas_core3_rc02.types.Cla
                 submodel_elements=[
                     aas_types.Property(
                         id_short="some_property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1984"
                     ),
                     aas_types.Property(
                         id_short="another_property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1985"
                     ),
                     aas_types.Property(
                         id_short="yet_another_property",
-                        value_type=aas_types.DataTypeDefXSD.INT,
+                        value_type=aas_types.DataTypeDefXsd.INT,
                         value="1986"
                     )
                 ]
