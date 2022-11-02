@@ -8679,7 +8679,7 @@ class _ReaderAndSetterForExtension:
         self.semantic_id: Optional[aas_types.Reference] = None
         self.supplemental_semantic_ids: Optional[List[aas_types.Reference]] = None
         self.name: Optional[str] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.value: Optional[str] = None
         self.refers_to: Optional[aas_types.Reference] = None
 
@@ -9312,7 +9312,7 @@ class _ReaderAndSetterForQualifier:
         self.supplemental_semantic_ids: Optional[List[aas_types.Reference]] = None
         self.kind: Optional[aas_types.QualifierKind] = None
         self.type: Optional[str] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.value: Optional[str] = None
         self.value_id: Optional[aas_types.Reference] = None
 
@@ -11625,10 +11625,10 @@ def _read_relationship_element_as_element(
 
 def _read_aas_submodel_elements_from_element_text(
     element: Element, iterator: Iterator[Tuple[str, Element]]
-) -> aas_types.AASSubmodelElements:
+) -> aas_types.AasSubmodelElements:
     """
     Parse the text of :paramref:`element` as a literal of
-    :py:class:`.types.AASSubmodelElements`, and read the corresponding
+    :py:class:`.types.AasSubmodelElements`, and read the corresponding
     end element from :paramref:`iterator`.
 
     :param element: start element
@@ -11645,7 +11645,7 @@ def _read_aas_submodel_elements_from_element_text(
     if literal is None:
         raise DeserializationException(
             f"Not a valid string representation of "
-            f"a literal of AASSubmodelElements: {text}"
+            f"a literal of AasSubmodelElements: {text}"
         )
 
     return literal
@@ -11679,8 +11679,8 @@ class _ReaderAndSetterForSubmodelElementList:
         self.order_relevant: Optional[bool] = None
         self.value: Optional[List[aas_types.SubmodelElement]] = None
         self.semantic_id_list_element: Optional[aas_types.Reference] = None
-        self.type_value_list_element: Optional[aas_types.AASSubmodelElements] = None
-        self.value_type_list_element: Optional[aas_types.DataTypeDefXSD] = None
+        self.type_value_list_element: Optional[aas_types.AasSubmodelElements] = None
+        self.value_type_list_element: Optional[aas_types.DataTypeDefXsd] = None
 
     def read_and_set_extensions(
         self, element: Element, iterator: Iterator[Tuple[str, Element]]
@@ -12789,7 +12789,7 @@ class _ReaderAndSetterForProperty:
         self.embedded_data_specifications: Optional[
             List[aas_types.EmbeddedDataSpecification]
         ] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.value: Optional[str] = None
         self.value_id: Optional[aas_types.Reference] = None
 
@@ -13817,7 +13817,7 @@ class _ReaderAndSetterForRange:
         self.embedded_data_specifications: Optional[
             List[aas_types.EmbeddedDataSpecification]
         ] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.min: Optional[str] = None
         self.max: Optional[str] = None
 
@@ -19761,10 +19761,10 @@ def _read_key_types_from_element_text(
 
 def _read_data_type_def_xsd_from_element_text(
     element: Element, iterator: Iterator[Tuple[str, Element]]
-) -> aas_types.DataTypeDefXSD:
+) -> aas_types.DataTypeDefXsd:
     """
     Parse the text of :paramref:`element` as a literal of
-    :py:class:`.types.DataTypeDefXSD`, and read the corresponding
+    :py:class:`.types.DataTypeDefXsd`, and read the corresponding
     end element from :paramref:`iterator`.
 
     :param element: start element
@@ -19781,7 +19781,7 @@ def _read_data_type_def_xsd_from_element_text(
     if literal is None:
         raise DeserializationException(
             f"Not a valid string representation of "
-            f"a literal of DataTypeDefXSD: {text}"
+            f"a literal of DataTypeDefXsd: {text}"
         )
 
     return literal

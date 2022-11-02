@@ -245,7 +245,7 @@ class _SetterForExtension:
         self.semantic_id: Optional[aas_types.Reference] = None
         self.supplemental_semantic_ids: Optional[List[aas_types.Reference]] = None
         self.name: Optional[str] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.value: Optional[str] = None
         self.refers_to: Optional[aas_types.Reference] = None
 
@@ -691,7 +691,7 @@ class _SetterForQualifier:
         self.supplemental_semantic_ids: Optional[List[aas_types.Reference]] = None
         self.kind: Optional[aas_types.QualifierKind] = None
         self.type: Optional[str] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.value: Optional[str] = None
         self.value_id: Optional[aas_types.Reference] = None
 
@@ -1997,10 +1997,10 @@ def _relationship_element_from_jsonable_without_dispatch(
 
 def aas_submodel_elements_from_jsonable(
     jsonable: Jsonable,
-) -> aas_types.AASSubmodelElements:
+) -> aas_types.AasSubmodelElements:
     """
     Convert the JSON-able structure :paramref:`jsonable` to a literal of
-    :py:class:`.types.AASSubmodelElements`.
+    :py:class:`.types.AasSubmodelElements`.
 
     :param jsonable: JSON-able structure to be parsed
     :return: parsed literal
@@ -2013,7 +2013,7 @@ def aas_submodel_elements_from_jsonable(
     if literal is None:
         raise DeserializationException(
             f"Not a valid string representation of "
-            f"a literal of AASSubmodelElements: {jsonable}"
+            f"a literal of AasSubmodelElements: {jsonable}"
         )
 
     return literal
@@ -2040,8 +2040,8 @@ class _SetterForSubmodelElementList:
         self.order_relevant: Optional[bool] = None
         self.value: Optional[List[aas_types.SubmodelElement]] = None
         self.semantic_id_list_element: Optional[aas_types.Reference] = None
-        self.type_value_list_element: Optional[aas_types.AASSubmodelElements] = None
-        self.value_type_list_element: Optional[aas_types.DataTypeDefXSD] = None
+        self.type_value_list_element: Optional[aas_types.AasSubmodelElements] = None
+        self.value_type_list_element: Optional[aas_types.DataTypeDefXsd] = None
 
     def ignore(self, jsonable: Jsonable) -> None:
         """Ignore :paramref:`jsonable` and do not set anything."""
@@ -2656,7 +2656,7 @@ class _SetterForProperty:
         self.embedded_data_specifications: Optional[
             List[aas_types.EmbeddedDataSpecification]
         ] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.value: Optional[str] = None
         self.value_id: Optional[aas_types.Reference] = None
 
@@ -3214,7 +3214,7 @@ class _SetterForRange:
         self.embedded_data_specifications: Optional[
             List[aas_types.EmbeddedDataSpecification]
         ] = None
-        self.value_type: Optional[aas_types.DataTypeDefXSD] = None
+        self.value_type: Optional[aas_types.DataTypeDefXsd] = None
         self.min: Optional[str] = None
         self.max: Optional[str] = None
 
@@ -6456,10 +6456,10 @@ def key_types_from_jsonable(jsonable: Jsonable) -> aas_types.KeyTypes:
     return literal
 
 
-def data_type_def_xsd_from_jsonable(jsonable: Jsonable) -> aas_types.DataTypeDefXSD:
+def data_type_def_xsd_from_jsonable(jsonable: Jsonable) -> aas_types.DataTypeDefXsd:
     """
     Convert the JSON-able structure :paramref:`jsonable` to a literal of
-    :py:class:`.types.DataTypeDefXSD`.
+    :py:class:`.types.DataTypeDefXsd`.
 
     :param jsonable: JSON-able structure to be parsed
     :return: parsed literal
@@ -6472,7 +6472,7 @@ def data_type_def_xsd_from_jsonable(jsonable: Jsonable) -> aas_types.DataTypeDef
     if literal is None:
         raise DeserializationException(
             f"Not a valid string representation of "
-            f"a literal of DataTypeDefXSD: {jsonable}"
+            f"a literal of DataTypeDefXsd: {jsonable}"
         )
 
     return literal
