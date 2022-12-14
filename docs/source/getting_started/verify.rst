@@ -6,7 +6,7 @@ Our SDK allows you to verify that a model satisfies the constraints of the meta-
 
 The verification logic is concentrated in the module :py:mod:`aas_core3_rc02.verification`, and all it takes is a call to :py:func:`aas_core3_rc02.verification.verify` function.
 The function :py:func:`aas_core3_rc02.verification.verify` will check that constraints in the given model element are satisfied, including the recursion into children elements.
-The function returns an iterator of :py:class:`aas_core3_rc02.verification.Error`'s, which you can use to for further processing (*e.g.*, report to the user).
+The function returns an iterator of :py:class:`aas_core3_rc02.verification.Error`'s, which you can use for further processing (*e.g.*, report to the user).
 
 Here is a short example snippet:
 

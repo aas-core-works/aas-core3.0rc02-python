@@ -84,7 +84,7 @@ Visitor
 `Visitor pattern`_ is a common design pattern in software engineering.
 We will not explain the details of the pattern here as you can read about in the ample literature in books or in Internet.
 
-The cornerstone of the visitor pattern in `double dispatch`_: instead of casting to the desired type during the iteration, the method :py:meth:`aas_core3_rc02.types.Class.accept` directly dispatches to the appropriate visitation method.
+The cornerstone of the visitor pattern is `double dispatch`_: instead of casting to the desired type during the iteration, the method :py:meth:`aas_core3_rc02.types.Class.accept` directly dispatches to the appropriate visitation method.
 
 .. _Visitor pattern: https://en.wikipedia.org/wiki/Visitor_pattern
 .. _double dispatch: https://en.wikipedia.org/wiki/Double_dispatch
