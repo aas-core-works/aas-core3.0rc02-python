@@ -71,9 +71,6 @@ Here is a short example how you can get all the properties from an environment w
     another_property
     yet_another_property
 
-
-(You can also run the snippet at: TODO)
-
 Iteration with :py:meth:`~aas_core3_rc02.types.Class.descend_once` and :py:meth:`~aas_core3_rc02.types.Class.descend` works well if the performance is irrelevant.
 However, if the performance matters, this is not a good approach.
 First, all the children will be visited (even though you need only a small subset).
