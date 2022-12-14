@@ -74,7 +74,7 @@ Here is a short example how you can get all the properties from an environment w
 Iteration with :py:meth:`~aas_core3_rc02.types.Class.descend_once` and :py:meth:`~aas_core3_rc02.types.Class.descend` works well if the performance is irrelevant.
 However, if the performance matters, this is not a good approach.
 First, all the children will be visited (even though you need only a small subset).
-Second, you need to switch with :py:function`isinstance` on the runtime type, which grows linearly in computational cost with the number of types you switch on.
+Second, you need to switch with :py:function:`isinstance` on the runtime type, which grows linearly in computational cost with the number of types you switch on.
 
 Let's see in the next section how we could use a more efficient, but also a more complex approach.
 
