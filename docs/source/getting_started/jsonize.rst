@@ -65,7 +65,7 @@ De-serialize
 ============
 
 Our SDK can convert a JSON-able mapping back to an instance of :py:class:`aas_core3_rc02.types.Environment`.
-To that end, you call the function :py:func:aas_core3_rc02.jsonization.environment_from_jsonable`.
+To that end, you call the function :py:func:`aas_core3_rc02.jsonization.environment_from_jsonable`.
 
 
 Here is an example snippet:
