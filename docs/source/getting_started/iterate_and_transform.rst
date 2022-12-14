@@ -18,7 +18,7 @@ Otherwise, it will yield from the actual property value.
 For example, see :py:meth:`aas_core3_rc02.types.Environment.over_submodels_or_empty`.
 
 
-``DescendOnce`` and ``Descend``
+``descend_once`` and ``descend``
 ===============================
 
 If you are writing a simple script and do not care about the performance, the SDK provides two methods in the most general interface :py:class:`aas_core3_rc02.types.Class`, :py:meth:`~aas_core3_rc02.types.Class.descend_once` and :py:meth:`~aas_core3_rc02.types.Class.descend`, which you can use to loop through the instances.
