@@ -2,7 +2,7 @@
 Create, Get and Set Properties of an AAS Model
 **********************************************
 
-We module :py:mod:`aas_core3_rc02.types` contains all the data types of the meta-model.
+The module :py:mod:`aas_core3_rc02.types` contains all the data types of the meta-model.
 This includes enumerations, abstract and concrete classes.
 
 The module :py:mod:`aas_core3_rc02.types` also contains visitors and transformers, but we will write more about them in :ref:`iterate_and_transform` section.
