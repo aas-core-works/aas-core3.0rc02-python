@@ -2,6 +2,15 @@
 Change Log
 **********
 
+1.0.0rc4 (2022-12-17)
+=====================
+Non-breaking changes:
+
+* Fix verifications to check for falsy matches (#25)
+* Fix ``is_xs_date*`` to match first (#24)
+* Deprecate for Python 3.6 (#23)
+* Minor fixes in the documentations (#22, #21, #20, #19, #18, #16)
+
 1.0.0rc3 (2022-11-02)
 =====================
 * Sync naming with the published schemas for V3RC02 (#13)
